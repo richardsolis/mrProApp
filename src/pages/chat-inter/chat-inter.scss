@@ -1,0 +1,37 @@
+page-chat-inter {
+  .chat-text {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    background: rgba(158, 158, 158, 0.16);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    input {
+      width: 68%;
+      border-radius: 20px;
+      border: none;
+      padding: 6px 16px;
+    }
+    div {
+      button {
+        padding: 9px 18px;
+        background: #cddc39;
+        color: white;
+        font-weight: 900;
+        font-size: 18px;
+        border-radius: 24px;
+      }
+    }
+  }
+  .money-propuesta {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}

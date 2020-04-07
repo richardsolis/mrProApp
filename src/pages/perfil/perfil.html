@@ -1,0 +1,42 @@
+<!--
+  Generated template for the PerfilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content>
+  <div class="header-perfil" *ngIf="perfil.logo_url != ''" [ngStyle]="{ 'background-image': 'url(' + perfil.logo_url + ')' }"></div>
+  <div class="header-perfil" *ngIf="perfil.logo_url == '' || perfil.logo_url == null" style="background-image: url('assets/imgs/perfil-defult.png')"></div>
+
+  <div class="content-info-perfil">
+    <h3>{{ perfil.user.name }} {{ perfil.user.lastname }}</h3>
+    <div class="data-extra">
+      <p>Emai: {{ perfil.user.email }}</p>
+      <p>DNI: {{ perfil.user.doc_number }}</p>
+      <p>Celular: {{ perfil.user.phone }}</p>
+    </div>
+    <div class="row-data">
+      <div class="data-perfil">
+        <h5>
+          <b>{{ perfil.average_score }}</b> <br />
+          Calificación
+        </h5>
+      </div>
+      <div class="data-perfil">
+        <h5>
+          <b>{{ n }}</b> <br />
+          Años de <br />
+          Experiencia
+        </h5>
+      </div>
+      <div class="data-perfil">
+        <h5>
+          <b>{{ finalizado }}</b> <br />
+          Servicios <br />
+          finalizado
+        </h5>
+      </div>
+    </div>
+    <button ion-button color="danger" (click)="logAuth()">Cerrar Sesión</button>
+  </div>
+</ion-content>

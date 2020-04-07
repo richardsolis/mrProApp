@@ -1,0 +1,48 @@
+page-lista {
+  .segment-md .segment-button {
+    color: #ffffff !important;
+    background-color: #ffffff91 !important;
+  }
+  .segment-md .segment-button.activated,
+  .segment-md .segment-button.segment-activated {
+    border-color: #ffffff;
+  }
+  .scroll-content {
+    padding-top: 85px !important;
+    padding-top: 20px;
+    // background: #000000d4;
+    // background-image: linear-gradient(45deg, #2e3192, #1bffff);
+    // background-image: linear-gradient(45deg, #808080, #e6e6e6);
+    background-image: linear-gradient(45deg, #333, #5a5454);
+  }
+  ion-slides {
+    height: 150px;
+    ion-slide {
+      background-size: cover;
+    }
+  }
+  ion-card {
+    width: 95% !important;
+    margin: auto !important;
+    margin-bottom: 20px !important;
+    box-shadow: rgba(41, 98, 182, 0.12) 0px 10px 10px !important;
+    border-radius: 13px !important;
+    ion-card-content {
+      ion-card-title {
+        font-size: 22px;
+        font-weight: 800;
+      }
+      p {
+        color: #8c8c8c;
+        font-weight: 100;
+      }
+    }
+    ion-col {
+      button {
+        width: 100%;
+        // background: blue;
+        color: blue !important;
+      }
+    }
+  }
+}
